@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border='2px' width='100%'>
+        <tr>
+        <th width='10%'>Request Type</th>
+        <th width='10%'>TO </th>
+        <th width='40%'>Path</th>
+        <th width='40%'>Format</th>
+        </tr>
+        <tr>
+            <td>Post request</td>
+            <td>Register</td>
+            <td>http://127.0.0.1:8000/accounts/register/</td>
+            <td>{
+                "username": "Harshsah10u",
+                "first_name":"harsh",
+                "last_name":"sahu",
+                "email":"harrshsahu709@gmail.com",
+                "password": "123",
+                "creator":"True"
+            }</td>
+        </tr>
+        <tr>
+            <td>    Post request</td>
+            <td>Login</td>
+            <td>simple login:{http://127.0.0.1:8000/accounts/login1/} <br>
+                JWT login:{http://127.0.0.1:8000/accounts/login2/}
+            </td>
+            <td>{
+                "username": "Harshsahu",
+                "password": "123"
+            }</td>
+        </tr>
+        <tr>
+            <td>Get/Post Request</td>
+            <td>To See Main Fields and to add Field</td>
+            <td>{http://127.0.0.1:8000/quiz/Main_Field/}</td>
+            <td>{
+                "Field_name": "Tech"
+            }</td>
+        </tr>
+        <tr>
+            <td>/Put/Patch/Delete Request</td>
+            <td>TO Create/update/delete Field name</td>
+            <td>{http://127.0.0.1:8000/quiz/Main_Field/{uuid}}</td>
+            
+        </tr>
+
+        <tr>
+            <td>Get/Post Request</td>
+            <td> To Fetch and Add Categories</td>
+            <td>{http://127.0.0.1:8000/quiz/Category/}</td>
+            <td>{
+                "category_name": "",
+                "main_field_name": null
+            }</td>
+        </tr>
+
+        <tr>
+            <td>Put/Patch/Delete Request</td>
+            <td> To update/delete Categories</td>
+            <td>{http://127.0.0.1:8000/quiz/Category/{uuid}}</td>
+        </tr>
+
+        <tr>
+            <td>Get/Post Request</td>
+            <td> To Fetch and Add Sub-Categories</td>
+            <td>{http://127.0.0.1:8000/quiz/Sub_category/}</td>
+            <td>{
+                "sub_cat_name": "",
+                "main_category": null,
+                "Main_field_name": null
+            }</td>
+        </tr>
+
+        <tr>
+            <td>Put/Patch/Delete Request</td>
+            <td> To update/delete Categories</td>
+            <td>{http://127.0.0.1:8000/quiz/Sub_category/{uuid}}</td>
+        </tr>
+
+        <tr>
+            <td>Get/Post Request</td>
+            <td> To Fetch and Add Questiosn</td>
+            <td>{http://127.0.0.1:8000/quiz/question/}</td>
+            <td>{
+                "Level": null,
+                "Question": "",
+                "marks": null,
+                "main_field_name": null,
+                "main_category": null,
+                "ques_sub": null
+            }</td>
+        </tr>
+
+        <tr>
+            <td>Put/Patch/Delete Request</td>
+            <td> To update/delete Questions</td>
+            <td>{http://127.0.0.1:8000/quiz/question/{uuid}}</td>
+        </tr>
+
+        <tr>
+            <td>Get/Post Request</td>
+            <td> To Fetch and Add Answers</td>
+            <td>{http://127.0.0.1:8000/quiz/Answer/}</td>
+            <td>{
+                "answer": "",
+                "is_correct": false,
+                "question_Ans": null
+            }</td>
+        </tr>
+
+        <tr>
+            <td>Put/Patch/Delete Request</td>
+            <td> To update/delete Answers</td>
+            <td>{http://127.0.0.1:8000/quiz/Answer/{uuid}}</td>
+        </tr>
+    </table>
+</body>
+</html>
